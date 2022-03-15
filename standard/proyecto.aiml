@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+	<category>
+		<pattern>
+			HOLA
+		</pattern>
+		<template>
+			Hola
+		</template>
+	</category>
+	<category>
+		<pattern>
+			PERRO
+		</pattern>
+		<template>
+			GUAU
+		</template>
+	</category>
+	<category>
+		<pattern>
+			CHUCHO
+		</pattern>
+		<template>
+			<srai>
+				PERRO
+			</srai>
+		</template>
+	</category>
+	<category>
+      <pattern>GATO</pattern>
+      <template>
+         <random>
+            <li> MIAU </li>
+            <li> GRRRRR! </li>
+         </random>
+      </template>
+   </category>  
+	<category>
+      <pattern>MI ANIMAL FAVORITO ES *</pattern>
+      <template>
+         recordare eso, tu animal favorito es <set name = "animal_fav"> <star/>! </set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>CUAL ES MI ANIMAL FAVORITO</pattern>
+      <template>
+         Me dijiste que tu animal favorito es <get name = "animal_fav"/> !
+      </template>  
+   </category>  
+	<category>
+      <pattern>* VA ANTES QUE *</pattern>
+      <template>
+         No!!, <star index = "2"/> va antes que <star index = "1"/>!
+      </template>
+   </category>
+
+	</aiml>

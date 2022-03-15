@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0"> 
+
+<category>
+<pattern>HOLA ALICE</pattern>
+<template>
+HOLA USUARIO
+</template>
+</category>
+<category>
+<pattern>NOMBRE</pattern>
+<template>
+GABY
+</template>
+</category>
+<category>
+<pattern>CUR</pattern>
+<template>
+SI
+</template>
+</category>
+ <category>
+      <pattern>MI NOMBRE ES *</pattern>
+      <template>
+        HOLA <star/>.
+      </template>
+   </category>
+<category>
+      <pattern>EL CURSO * ES *</pattern>
+      <template>
+         como <star index = "1"/> xyz <star index = "2"/>?
+      </template>
+   </category>
+
+<category>
+      <pattern>TU SABES * ES</pattern>
+      <template>
+         <srai>QUIE ES <star/></srai>
+      </template>
+   </category>
+
+ <category>
+      <pattern>UMG</pattern>
+      <template>NUESTRA UNIVERSIDAD!</template>
+   </category>
+   
+   <category>
+      <pattern>U</pattern>
+      <template>
+         <srai>UMG</srai>
+      </template>
+   </category>
+  
+<category>
+      <pattern>ESTUDIAR</pattern>
+      <template>ES MUY IMPORTANTE.</template>
+   </category>  
+   
+   <category>
+      <pattern>_ ESTUDIAR</pattern>
+      <template>
+         <srai>ESTUDIAR</srai>
+      </template>
+   </category>
+<category>
+      <pattern>ESTUDIAR *</pattern>
+      <template>
+         <srai>ESTUDIAR</srai>
+      </template>
+   </category>
+   
+   <category>
+      <pattern>_ ESTUDIAR *</pattern>
+      <template>
+         <srai>ESTUDIAR</srai>
+      </template>
+   </category>
+
+<category>
+      <pattern>HOLAA BOT</pattern>
+      <template>
+         <random>
+            <li> BUENAS </li>
+            <li> BUENA NOCHE </li>
+            <li> HOLA </li>
+         </random>
+      </template>
+      
+   </category>  
+
+ </aiml>
