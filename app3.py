@@ -63,6 +63,7 @@ def receive_message():
         # Obtener el mensaje
        output = request.get_json()
        contador_mensajes = 0
+       
        #print (output)
        for event in output['entry']:
           messaging = event['messaging']
