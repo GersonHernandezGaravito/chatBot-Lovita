@@ -3,4 +3,3 @@ flask
 aiml
 clock
 pymessenger
-requirements.txt
